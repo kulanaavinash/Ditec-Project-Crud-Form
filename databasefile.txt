@@ -1,0 +1,52 @@
+
+//Database name
+Skills
+
+
+//create login table
+
+
+CREATE TABLE [dbo].[login](
+	[username] [varchar](50) NULL,
+	[password] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+
+
+//Insert login authentication data
+USE [Skills]
+GO
+
+INSERT INTO [dbo].[login]
+           ([username]
+           ,[password])
+     VALUES
+           ('Admin',
+           'Skills@123')
+GO
+
+
+
+
+
+//Create Student table
+CREATE TABLE [dbo].[Registration](
+	[regNo] [int] NULL,
+	[firstName] [varchar](50) NULL,
+	[lastName] [varchar](50) NULL,
+	[dateOfBirth] [datetime] NULL,
+	[gender] [varchar](50) NULL,
+	[address] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[mobilePhone] [int] NULL,
+	[homePhone] [int] NULL,
+	[parentName] [varchar](50) NULL,
+	[nic] [varchar](50) NULL,
+	[contactNo] [int] NULL
+) ON [PRIMARY]
+GO
+
